@@ -1,0 +1,32 @@
+.navbar {
+  background: white;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+  position: sticky; top: 0; z-index: 100;
+  height: 66px;
+}
+.navbar-inner { display: flex; align-items: center; height: 66px; gap: 32px; }
+.navbar-brand { display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; color: var(--dark); }
+.brand-icon { font-size: 1.4rem; }
+.brand-text span { color: var(--primary); }
+.navbar-links { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+.nav-link { padding: 8px 14px; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; color: var(--gray-700); transition: var(--transition); }
+.nav-link:hover, .nav-link.active { color: var(--primary); background: rgba(15,76,129,0.06); }
+.navbar-auth { display: flex; align-items: center; gap: 8px; margin-left: 16px; }
+.user-menu { display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 6px 12px; border-radius: var(--radius-sm); transition: var(--transition); position: relative; }
+.user-menu:hover { background: var(--gray-100); }
+.user-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
+.user-name { font-size: 0.9rem; font-weight: 500; }
+.dropdown-arrow { font-size: 0.7rem; color: var(--gray-500); }
+.user-dropdown { position: absolute; top: calc(100% + 8px); right: 0; background: white; border-radius: var(--radius); box-shadow: var(--shadow-lg); min-width: 180px; overflow: hidden; border: 1px solid var(--gray-100); }
+.user-dropdown a, .user-dropdown button { display: block; width: 100%; padding: 12px 18px; font-size: 0.9rem; color: var(--gray-700); transition: var(--transition); background: none; text-align: left; }
+.user-dropdown a:hover, .user-dropdown button:hover { background: var(--gray-50); color: var(--primary); }
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; padding: 8px; margin-left: auto; }
+.hamburger span { width: 22px; height: 2px; background: var(--gray-700); border-radius: 2px; display: block; }
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .navbar-links { display: none; position: absolute; top: 66px; left: 0; right: 0; background: white; flex-direction: column; padding: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-top: 1px solid var(--gray-100); align-items: flex-start; }
+  .navbar-links.open { display: flex; }
+  .nav-link { width: 100%; }
+  .navbar-auth { margin-left: auto; }
+  .user-name { display: none; }
+}

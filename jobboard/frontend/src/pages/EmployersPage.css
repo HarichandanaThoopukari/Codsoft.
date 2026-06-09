@@ -1,0 +1,9 @@
+.employers-page { min-height: calc(100vh - 66px); }
+.employers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.employer-card { padding: 28px; text-align: center; }
+.employer-card:hover { transform: translateY(-3px); }
+.emp-logo { width: 64px; height: 64px; border-radius: var(--radius); background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.employer-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+.emp-location { font-size: 0.85rem; color: var(--gray-500); margin-top: 8px; }
+.emp-desc { font-size: 0.82rem; color: var(--gray-600); margin-top: 10px; line-height: 1.5; }
+.emp-size { font-size: 0.82rem; color: var(--gray-500); margin-top: 6px; }
