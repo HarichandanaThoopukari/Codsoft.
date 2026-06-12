@@ -1,0 +1,67 @@
+export const sampleQuizzes = [
+  {
+    title: 'JavaScript Fundamentals',
+    description: 'Test your understanding of core JavaScript concepts including variables, functions, and modern ES6+ syntax.',
+    category: 'Programming',
+    difficulty: 'Easy',
+    questions: [
+      { questionText: 'Which keyword is used to declare a block-scoped variable in modern JavaScript?', options: ['var', 'let', 'define', 'variable'], correctAnswer: 'let' },
+      { questionText: 'Which method adds an element to the end of an array?', options: ['pop()', 'push()', 'shift()', 'splice()'], correctAnswer: 'push()' },
+      { questionText: 'What does === check in JavaScript?', options: ['Only value equality', 'Only type equality', 'Both value and type equality', 'Reference equality only'], correctAnswer: 'Both value and type equality' },
+      { questionText: 'What will typeof null return?', options: ['"null"', '"undefined"', '"object"', '"boolean"'], correctAnswer: '"object"' },
+      { questionText: 'Which array method returns a new array with transformed elements?', options: ['forEach()', 'filter()', 'map()', 'reduce()'], correctAnswer: 'map()' },
+    ],
+  },
+  {
+    title: 'Computer Architecture Fundamentals',
+    description: 'Core concepts of computer architecture, CPU components, and memory hierarchy.',
+    category: 'Computer Science',
+    difficulty: 'Medium',
+    questions: [
+      { questionText: 'Which component is primarily responsible for executing instructions?', options: ['ALU', 'Control Unit', 'CPU', 'Cache'], correctAnswer: 'CPU' },
+      { questionText: 'What does SRAM stand for?', options: ['Static Random Access Memory', 'Sequential RAM', 'Synchronous RAM', 'Simple RAM'], correctAnswer: 'Static Random Access Memory' },
+      { questionText: 'Which memory is fastest but most expensive per byte?', options: ['Hard Drive', 'Main Memory (DRAM)', 'Cache', 'SSD'], correctAnswer: 'Cache' },
+      { questionText: 'What is the purpose of the Program Counter (PC)?', options: ['Counts program errors', 'Holds address of next instruction', 'Stores current running programs', 'Measures CPU performance'], correctAnswer: 'Holds address of next instruction' },
+      { questionText: 'Which bus carries data between CPU and memory?', options: ['Address bus', 'Control bus', 'Data bus', 'I/O bus'], correctAnswer: 'Data bus' },
+    ],
+  },
+  {
+    title: 'Data Structures & Algorithms',
+    description: 'Test fundamental knowledge of arrays, linked lists, trees, and algorithm complexity.',
+    category: 'Computer Science',
+    difficulty: 'Hard',
+    questions: [
+      { questionText: 'What is the average time complexity of binary search on a sorted array?', options: ['O(n)', 'O(log n)', 'O(n log n)', 'O(1)'], correctAnswer: 'O(log n)' },
+      { questionText: 'Which data structure uses LIFO order?', options: ['Queue', 'Stack', 'Graph', 'Tree'], correctAnswer: 'Stack' },
+      { questionText: 'What is the best data structure to implement a priority queue efficiently?', options: ['Hash Table', 'Heap', 'Linked List', 'Array'], correctAnswer: 'Heap' },
+      { questionText: 'What is the time complexity of inserting into a hash table on average?', options: ['O(n)', 'O(log n)', 'O(1)', 'O(n²)'], correctAnswer: 'O(1)' },
+      { questionText: 'Which traversal visits the root node between left and right subtrees?', options: ['Pre-order', 'In-order', 'Post-order', 'Level-order'], correctAnswer: 'In-order' },
+    ],
+  },
+  {
+    title: 'Web Development Essentials',
+    description: 'Test your knowledge of HTML, CSS, and browser fundamentals.',
+    category: 'Web',
+    difficulty: 'Easy',
+    questions: [
+      { questionText: 'What CSS property controls the text size?', options: ['font-size', 'text-style', 'size', 'font-weight'], correctAnswer: 'font-size' },
+      { questionText: 'Which HTML element is used for the main page heading?', options: ['<section>', '<h1>', '<head>', '<div>'], correctAnswer: '<h1>' },
+      { questionText: 'What does DOM stand for?', options: ['Document Object Model', 'Data Object Management', 'Digital Omission Memory', 'Document Outline Map'], correctAnswer: 'Document Object Model' },
+      { questionText: 'Which CSS property is used to create space inside an element?', options: ['margin', 'spacing', 'padding', 'border'], correctAnswer: 'padding' },
+      { questionText: 'What does HTTP stand for?', options: ['HyperText Transfer Protocol', 'High Tech Transfer Process', 'HyperText Transport Procedure', 'Hosted Transfer Protocol'], correctAnswer: 'HyperText Transfer Protocol' },
+    ],
+  },
+  {
+    title: 'Electrical Engineering: Signals & Systems',
+    description: 'Introductory quiz covering basic signal types, sampling and transforms.',
+    category: 'Engineering',
+    difficulty: 'Medium',
+    questions: [
+      { questionText: 'Which transform is used to analyze frequency components of continuous signals?', options: ['Z-transform', 'Laplace transform', 'Fourier transform', 'Wavelet transform'], correctAnswer: 'Fourier transform' },
+      { questionText: 'What is the Nyquist rate concerned with?', options: ['Sampling frequency', 'Signal amplitude', 'Noise reduction', 'Signal delay'], correctAnswer: 'Sampling frequency' },
+      { questionText: 'What type of system produces an output only dependent on current and past inputs?', options: ['Non-causal system', 'Causal system', 'Linear system', 'Time-variant system'], correctAnswer: 'Causal system' },
+      { questionText: 'Which signal has infinite energy but finite average power?', options: ['Energy signal', 'Power signal', 'Aperiodic signal', 'Impulse signal'], correctAnswer: 'Power signal' },
+      { questionText: 'What is convolution used for in signal processing?', options: ['Multiplication of signals', 'Finding system response to an input', 'Sampling a signal', 'Compressing data'], correctAnswer: 'Finding system response to an input' },
+    ],
+  },
+];
