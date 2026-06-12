@@ -1,0 +1,14 @@
+.footer { background: var(--dark); color: rgba(255,255,255,0.7); margin-top: auto; }
+.footer-inner { display: grid; grid-template-columns: 1.5fr 2fr; gap: 60px; padding: 60px 0 40px; }
+.footer-logo { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: white; margin-bottom: 12px; }
+.footer-logo span { color: var(--accent); }
+.footer-brand p { font-size: 0.9rem; line-height: 1.6; max-width: 260px; }
+.footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.footer-col h4 { font-family: var(--font-display); font-size: 0.9rem; color: white; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.8px; }
+.footer-col a { display: block; font-size: 0.88rem; margin-bottom: 10px; transition: var(--transition); }
+.footer-col a:hover { color: white; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 0; text-align: center; font-size: 0.85rem; }
+@media (max-width: 768px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-links { grid-template-columns: repeat(2, 1fr); }
+}
