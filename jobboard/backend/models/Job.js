@@ -19,6 +19,8 @@ const jobSchema = new mongoose.Schema({
   category: { type: String },
   employer: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   isActive: { type: Boolean, default: true },
+  status: { type: String, enum: ['pending', 'approved', 'rejected'], default: 'pending' },
+  adminNote: { type: String },
   deadline: { type: Date },
   applicationsCount: { type: Number, default: 0 },
   views: { type: Number, default: 0 }
