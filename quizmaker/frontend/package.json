@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "node node_modules/vite/bin/vite.js build",
+    "build": "npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,5 +20,8 @@
     "postcss": "^8.4.36",
     "tailwindcss": "^3.4.5",
     "vite": "^5.4.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
