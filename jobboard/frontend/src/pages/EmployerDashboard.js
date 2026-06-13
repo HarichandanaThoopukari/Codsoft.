@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import API from '../utils/api';
+import API, { BACKEND_URL } from '../utils/api';
 import './Dashboard.css';
 
 const EmployerDashboard = () => {
@@ -177,7 +177,7 @@ const EmployerDashboard = () => {
                   </div>
                   <div className="app-actions">
                     <span className={`badge badge-${statusColors[app.status]}`}>{app.status}</span>
-                    {app.resume && <a href={app.resume} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">📄 Resume</a>}
+                    {app.resume && <a href={`${BACKEND_URL}${app.resume}`} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">📄 Resume</a>}
                     <select className="form-control" style={{width:'auto',padding:'6px 10px',fontSize:'0.82rem'}} value={app.status} onChange={e => handleStatusUpdate(app._id, e.target.value)}>
                       <option value="applied">Applied</option>
                       <option value="reviewing">Reviewing</option>
