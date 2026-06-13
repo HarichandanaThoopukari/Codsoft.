@@ -31,11 +31,14 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-bottom">
-      <div className="container">
-        <p>© 2024 JobBoard. All rights reserved.</p>
+      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+        <p>© 2026 JobBoard. All rights reserved.</p>
+        <Link to="/admin/login" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.4)' }}>Admin Login</Link>
       </div>
     </div>
   </footer>
 );
 
 export default Footer;
+
+
