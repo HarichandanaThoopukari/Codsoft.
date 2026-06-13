@@ -12,6 +12,8 @@ import EmployerDashboard from './pages/EmployerDashboard';
 import CandidateDashboard from './pages/CandidateDashboard';
 import EmployersPage from './pages/EmployersPage';
 import ProfilePage from './pages/ProfilePage';
+import AdminLoginPage from './pages/AdminLoginPage';
+import AdminDashboard from './pages/AdminDashboard';
 
 const ProtectedRoute = ({ children, role }) => {
   const { isAuthenticated, user } = useAuth();
@@ -34,6 +36,8 @@ const AppRoutes = () => (
         <Route path="/employer/dashboard" element={<ProtectedRoute role="employer"><EmployerDashboard /></ProtectedRoute>} />
         <Route path="/employer/profile" element={<ProtectedRoute role="employer"><ProfilePage /></ProtectedRoute>} />
         <Route path="/candidate/dashboard" element={<ProtectedRoute role="candidate"><CandidateDashboard /></ProtectedRoute>} />
+        <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </main>
