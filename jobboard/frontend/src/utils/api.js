@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+const API_BASE = process.env.REACT_APP_API_URL || '/api';
+
+export const BACKEND_URL = API_BASE.replace('/api', '');
+
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || '/api'
+  baseURL: API_BASE
 });
 
 API.interceptors.request.use(config => {
