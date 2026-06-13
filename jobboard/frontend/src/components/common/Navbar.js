@@ -45,7 +45,7 @@ const Navbar = () => {
               {dropdownOpen && (
                 <div className="user-dropdown">
                   <Link to={user.role === 'employer' ? '/employer/dashboard' : '/candidate/dashboard'} onClick={() => setDropdownOpen(false)}>Dashboard</Link>
-                  <Link to={user.role === 'employer' ? '/employer/profile' : '/candidate/profile'} onClick={() => setDropdownOpen(false)}>Profile</Link>
+                  <Link to={user.role === 'employer' ? '/employer/profile' : '/candidate/dashboard'} onClick={() => setDropdownOpen(false)}>Profile</Link>
                   <button onClick={handleLogout}>Logout</button>
                 </div>
               )}
