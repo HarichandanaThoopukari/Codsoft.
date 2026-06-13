@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import API from '../utils/api';
+import API, { BACKEND_URL } from '../utils/api';
 import './Dashboard.css';
 
 const CandidateDashboard = () => {
@@ -59,7 +59,7 @@ const CandidateDashboard = () => {
             <div className="profile-avatar">{user?.name?.charAt(0)}</div>
             <h3>{user?.name}</h3>
             <p>{user?.email}</p>
-            {user?.resume && <a href={user.resume} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm" style={{marginTop:'8px'}}>📄 My Resume</a>}
+            {user?.resume && <a href={`${BACKEND_URL}${user.resume}`} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm" style={{marginTop:'8px'}}>📄 My Resume</a>}
           </div>
           <nav className="sidebar-nav card">
             <button className={`sidebar-btn ${activeTab === 'applications' ? 'active' : ''}`} onClick={() => setActiveTab('applications')}>📥 Applications ({applications.length})</button>
